@@ -1,20 +1,20 @@
 package me.myc.wwl.libs;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.CopyOption;
-import java.nio.file.Files;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;
 import net.md_5.bungee.config.YamlConfiguration;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+
 public class YamlConfig {
+    private static Configuration config;
     private final File configFile;
     private final String fileName;
     private final Plugin plugin;
     private final File folder;
-    private static Configuration config;
 
     public YamlConfig(String fileName, Plugin plugin) {
         this.plugin = plugin;
@@ -30,7 +30,7 @@ public class YamlConfig {
 
         try {
             if (!this.configFile.exists()) {
-                Files.copy(this.plugin.getResourceAsStream(this.fileName), this.configFile.toPath(), new CopyOption[0]);
+                Files.copy(this.plugin.getResourceAsStream(this.fileName), this.configFile.toPath());
             }
 
             this.loadConfig();

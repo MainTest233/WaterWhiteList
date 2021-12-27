@@ -17,7 +17,7 @@
 
 插件命令:
 
-* /wwl              															插件帮助菜单
+* /wwl help             													 插件帮助菜单
 
 * /wwl whitelist <on/off>                                          启用/禁用白名单插件
 
@@ -30,5 +30,10 @@
 * /wwl km <set/get> [您要设置的踢出信息]           设置/获取当前玩家不处于白名单中时踢出的提示
 
 *PS:玩家模式仅支持Online（正版模式）与Offline（盗版模式）两种
+
+NeedFix:
+
+* /wwl 或者 /wwl * 输入错误后未正常反馈
+* /wwl del 不起作用
 
 如果遇到什么问题请直接使用GitHub Issue进行反馈

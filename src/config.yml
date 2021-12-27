@@ -1,6 +1,0 @@
-enabled: false
-kick_message: '你不在白名单内!'
-
-online: [] #不要修改这个!
-offline: [] #不要修改这个!
-id: [] #不要修改这个!
